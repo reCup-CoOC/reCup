@@ -13,7 +13,7 @@ $new_solde = $solde+(2*$new_nb_tasses_deposees);
 if($nb_tasses>=$new_nb_tasses_deposees)
 {
    $nb_final_tasses = $nb_tasses-$new_nb_tasses_deposees;
-   $query="UPDATE Utilisateur SET nb_tasses_empruntees = '$nb_final_tasses', solde = '$new_solde'  WHERE ID_USERS='$id_user'";
+   $query="UPDATE Utilisateur SET nb_tasses_empruntees = '$nb_final_tasses', solde='$new_solde' WHERE ID_USERS='$id_user'";
    if(mysqli_query($conn,$query))
    {
        echo "Record updated successfully";

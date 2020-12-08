@@ -33,3 +33,6 @@ Prenom:<br>
     <input type="text" name="prenom"><br>
     <input type="submit">
 </form>
+
+<br/><br/>
+<a href="../index.php">Revenir au choix précédent</a>

@@ -37,7 +37,7 @@ if ($result = mysqli_query($conn,$query))
        <?php
     }
     ?><br/><?php
-    echo "Nombre total de tasse empruntées : ";
+    echo "Nombre de tasse empruntées : ";
     echo $nb_total_tasses;
 }
 

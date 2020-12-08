@@ -10,10 +10,9 @@ $sNew_nb_tasses_empruntees = $_POST['new_nb_tasses_empruntees'];
 $new_nb_tasses_empruntees = intval($sNew_nb_tasses_empruntees);
 $new_nb_total_tasses = $new_nb_tasses_empruntees+$nb_tasses;
 
-
 if($solde >= (2*$new_nb_tasses_empruntees))
 {
-   $new_solde = $solde - (2*$new_nb_tasses_empruntees);  
+   $new_solde = $solde - (2*$new_nb_tasses_empruntees);
    $query="UPDATE Utilisateur SET nb_tasses_empruntees = '$new_nb_total_tasses', solde='$new_solde' WHERE ID_USERS='$id_user'";
    if (mysqli_query($conn,$query))
    {
