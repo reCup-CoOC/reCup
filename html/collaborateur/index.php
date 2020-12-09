@@ -12,6 +12,10 @@ if(!$_SESSION['anything'])
 
 //Utilisateur connecté
 
+?>
+<h2>Bienvenue <?php echo $_SESSION['Prenom_collab']; ?> <?php echo $_SESSION['Nom_collab']; ?></h2>
+<?php
+
 include 'config.php';
 
 $query="SELECT nom, prenom, nb_tasses_empruntees From Utilisateur where nb_tasses_empruntees > 0";
@@ -37,7 +41,7 @@ if ($result = mysqli_query($conn,$query))
        <?php
     }
     ?><br/><?php
-    echo "Nombre de tasse empruntées : ";
+    echo "Nombre total de tasse empruntées : ";
     echo $nb_total_tasses;
 }
 
