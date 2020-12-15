@@ -10,8 +10,9 @@ session_start();
 <form action=./collaborateur/index.php method="POST">
     <input type="submit" value="collaborateur">
 </form>
-
+<!--
 <h2>Quel simulateur voulez-vous utiliser?</h2>
 <form action=./simulation_utilisateur/index.php method="POST">
     <input type="submit" value="Utilisateur">
 </form>
+-->

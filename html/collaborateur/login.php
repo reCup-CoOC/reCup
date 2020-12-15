@@ -32,9 +32,12 @@ if($_POST)
 ?>
 
 <form method="POST">
-Nom:<br>
+Login:<br>
     <input type="text" name="login"><br>
-Prenom:<br>
+Password:<br>
     <input type="password" name="password"><br>
     <input type="submit">
 </form>
+
+<br/><br/>
+<a href="../index.php">Revenir au choix précédent</a>

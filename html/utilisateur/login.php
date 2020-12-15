@@ -46,3 +46,5 @@ Password:<br>
     <input type="submit">
 </form>
 
+<br/><br/>
+<a href="../index.php">Revenir au choix précédent</a>
